@@ -1,7 +1,8 @@
 var baseUrl = require('../../config').baseUrl;
 module.exports = function(app) {
   app.controller('SignUpController', ['$http', '$location',  'cfHandleError', 'cfAuth', function($http, $location, handleError, auth) {
-    // AUTH_EXP: how does this differ from the sign_in_controller
+    //DONE: how does this differ from the sign_in_controller
+    /*This is different from the sign_in_controller because we are saving a Token associated with the username when the user submites the data. This token is then used to verify the user in the sign_in_controller.*/
     this.signup = true;
     this.errors = [];
     this.buttonText = 'Create New User!'

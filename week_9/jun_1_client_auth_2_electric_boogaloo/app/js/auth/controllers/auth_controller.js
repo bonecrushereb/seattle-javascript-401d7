@@ -3,7 +3,8 @@ module.exports = function(app) {
     this.username = '';
     this.errors = [];
     this.getUsername = function() {
-      // AUTH_EXP: What happens when this function is called?
+      //DONE: What happens when this function is called?
+      /*When the getUsername is called it sets the currentUser to the username the user used to sign_up*/
       auth.getUsername()
         .then((currentUser) => {
           this.username = currentUser;

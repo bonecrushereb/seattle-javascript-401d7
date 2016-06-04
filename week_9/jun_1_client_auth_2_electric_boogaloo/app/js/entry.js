@@ -12,8 +12,9 @@ demoApp.config(['$routeProvider', function($rp) {
       controller: 'BearsController',
       controllerAs: 'bearsctrl'
     })
-    // AUTH_EXP: how do the signin/up routes differ and what is their relationship
+    // DONE: how do the signin/up routes differ and what is their relationship
     // with one another
+    /*Although the sign in and sign up controllers are seperate they are still using the same auth_controller. the auth_controller is just setting the current user to this.username. The real power behindt the sign in and sign up routes comes from their respected controllers.*/
     .when('/signup', {
       templateUrl: 'templates/auth/views/auth_view.html',
       controller: 'SignUpController',
